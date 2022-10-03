@@ -20,6 +20,10 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 [<img src="images/smile.png" height="230" title="CSS Heart">](examples/smile.html)
 
+### 2. CSS Star
+
+[<img src="images/star.png" height="230" title="CSS Star">](examples/star.html)
+
 **[⬆ back to top](#examples)**
 
 
