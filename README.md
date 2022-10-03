@@ -16,6 +16,10 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 [<img src="images/heart.png" height="230" title="CSS Heart">](examples/heart.html)
 
+### 2. CSS Smile
+
+[<img src="images/smile.png" height="230" title="CSS Heart">](examples/smile.html)
+
 **[⬆ back to top](#examples)**
 
 
