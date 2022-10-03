@@ -39,12 +39,19 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 2. Add your HTML File to the examples directory.
 3. Add the screenshot to the images directory.
 3. Add the link to your HTML (or you can add the codepen link) to the [examples](#examples) in the readme.md file.
-4. Raise the PR.
+4. [Optional] Add your contributing details using [@allcontributors bot usage](https://allcontributors.org/docs/en/bot/usage).
+5. Raise the PR.
+
 
 ---
 
 # Contributors
 
-<a href="https://github.com/akshaykhale1992/You-Dont-Need-image/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=akshaykhale1992/You-Dont-Need-image" />
-</a>
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
