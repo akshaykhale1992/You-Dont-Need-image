@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #6accd9;
+}
+
+.face {
+  position: relative;
+  background: #ffe554;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.face::before {
+  content: '';
+  position: absolute;
+  top: 200px;
+  width: 150px;
+  height: 20px;
+  background: #f498bf;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  transition: 0.5s;
+}
+
+.face:hover::before {
+  top: 200px;
+  width: 80px;
+  height: 70px;
+  background: #f498bf;
+  border-radius: 100%;
+}
+
+.eyes {
+  position: relative;
+  top: -20px;
+  display: flex;
+}
+
+.eyes .eye {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: white;
+  margin: 0 30px;
+  border-radius: 50%;
+}
+
+.eyes .eye::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="eyes">
+          <div class="eye"></div>
+          <div class="eye"></div>
+        </div>
+      </div>
+</body>
+</html>
