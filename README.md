@@ -28,6 +28,11 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 [<img src="images/eye-emoji.png" height="230" title="CSS eye EMoji">](examples/eyes.html)
 
+### 5. CSS Rainbow
+
+[<img src="images/rainbow.png" height="230" title="CSS Rainbow">](examples/rainbow.html)
+
+
 **[⬆ back to top](#examples)**
 
 
