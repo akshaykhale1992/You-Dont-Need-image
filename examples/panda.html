@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda with Pure CSS</title>
+</head>
+<style>
+  body {
+    margin-top: 50px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-left: -30%;
+  }
+
+  .face-top-left {
+    width: 105px;
+    height: 130px;
+    border-left: 8px solid black;
+    border-top: 8px solid black;
+    border-radius: 100% 0% 0% 15%;
+    position: absolute;
+  }
+
+  .face-top-right {
+    width: 105px;
+    height: 130px;
+    border-right: 8px solid black;
+    border-top: 8px solid black;
+    border-radius: 0% 100% 15% 0%;
+    position: absolute;
+    margin-left: 105px;
+  }
+
+  .face-bottom {
+    width: 165px;
+    height: 165px;
+    border-bottom: 8px solid black;
+    border-right: 8px solid black;
+    border-radius: 0% 20% 70% 20%;
+    transform-origin: 50% 50%;
+    transform: rotatez(45deg);
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 40px;
+  }
+
+  .ear {
+    width: 30px;
+    height: 50px;
+    border-radius: 70% 20% 20% 70%;
+    background: black;
+    position: absolute;
+  }
+
+  .ear:nth-child(1) {
+    transform-origin: 50% 50%;
+    transform: rotatez(45deg);
+    margin-left: 10px;
+  }
+
+  .ear:nth-child(2) {
+    transform-origin: 110px 50%;
+    transform: rotatey(180deg) rotatez(45deg);
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+
+  .eye {
+    width: 25px;
+    height: 25px;
+    border-top: 20px solid black;
+    border-bottom: 25px solid black;
+    position: absolute;
+    transform-origin: 50% 50%;
+  }
+
+  .iris {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .iris:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 15%;
+    margin-left: 15%;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .eye:nth-child(1) {
+    transform: rotatez(35deg);
+    margin-left: 40px;
+    margin-top: 40px;
+    border-left: 15px solid black;
+    border-right: 8px solid black;
+    border-radius: 50% 35% 35% 50%;
+  }
+
+  .eye:nth-child(1) .iris {
+    margin-top: -3px;
+    margin-left: -4px;
+  }
+
+  .eye:nth-child(2) {
+    transform: rotatez(-35deg);
+    margin-left: 125px;
+    margin-top: 40px;
+    border-right: 15px solid black;
+    border-left: 8px solid black;
+    border-radius: 35% 50% 50% 35%;
+  }
+
+  .eye:nth-child(2) .iris {
+    margin-top: -3px;
+    margin-left: -2px;
+  }
+
+  .nose {
+    width: 35px;
+    height: 24px;
+    border-radius: 35% 35% 70% 70%;
+    background: black;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 88px;
+  }
+
+  .nose:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 20px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 14px;
+    background: black;
+  }
+
+  .lips {
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 70px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .lips-top-left {
+    width: 40px;
+    height: 40px;
+    border-bottom: 12px solid black;
+    border-radius: 50%;
+    transform-origin: 100% 50%;
+    transform: rotatez(20deg);
+  }
+
+  .lips-top-right {
+    width: 40px;
+    height: 40px;
+    border-bottom: 12px solid black;
+    border-radius: 50%;
+    transform-origin: 0% 50%;
+    transform: rotatez(-20deg);
+    margin-left: -8px;
+  }
+
+  .lips-bottom {
+    width: 72px;
+    height: 72px;
+    border-bottom: 12px solid black;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -22px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <div class="ear"></div>
+      <div class="ear"></div>
+      <div class="face">
+        <div class="eyes">
+          <div class="eye">
+            <div class="iris"></div>
+          </div>
+          <div class="eye">
+            <div class="iris"></div>
+          </div>
+        </div>
+        <div class="nose"></div>
+        <div class="lips">
+          <div class="lips-top-left"></div>
+          <div class="lips-top-right"></div>
+          <div class="lips-bottom"></div>
+        </div>
+        <div class="face-top-left"></div>
+        <div class="face-top-right"></div>
+        <div class="face-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
