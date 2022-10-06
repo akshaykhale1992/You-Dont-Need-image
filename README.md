@@ -16,17 +16,35 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 [<img src="images/heart.png" height="230" title="CSS Heart">](examples/heart.html)
 
+**[⬆ back to top](#examples)**
+
 ### 2. CSS Smile
 
 [<img src="images/smile.png" height="230" title="CSS Heart">](examples/smile.html)
+
+**[⬆ back to top](#examples)**
 
 ### 3. CSS Star
 
 [<img src="images/star.png" height="230" title="CSS Star">](examples/star.html)
 
+**[⬆ back to top](#examples)**
+
 ### 4. CSS Eye Emoji
 
 [<img src="images/eye-emoji.png" height="230" title="CSS eye EMoji">](examples/eyes.html)
+
+**[⬆ back to top](#examples)**
+
+### 5. CSS Panda
+
+[<img src="images/panda.png" height="230" title="CSS eye EMoji">](examples/panda.html)
+
+**[⬆ back to top](#examples)**
+
+### 6. Mario
+
+[<img src="images/mario.png" height="230" title="CSS eye EMoji">](examples/mario.html)
 
 **[⬆ back to top](#examples)**
 
