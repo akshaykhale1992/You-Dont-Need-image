@@ -61,8 +61,7 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 1. Clone this repository with the following command: `https://github.com/akshaykhale1992/You-Dont-Need-image.git`
 2. Add your HTML File to the examples directory.
 3. Add the screenshot to the images directory.
-3. Add the link to your HTML (or you can add the codepen link) to the [examples](#examples) in the readme.md file.
-4. [Optional] Add your contributing details using [@allcontributors bot usage](https://allcontributors.org/docs/en/bot/usage).
+4. Add the link to your HTML (or you can add the codepen link) to the [examples](#examples) in the readme.md file.
 5. Raise the PR.
 
 
@@ -72,11 +71,3 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 <p><a href="https://github.com/akshaykhale1992/You-Dont-Need-image/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=akshaykhale1992/You-Dont-Need-image" />
 </a></p>
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
