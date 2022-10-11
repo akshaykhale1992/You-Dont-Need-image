@@ -53,6 +53,11 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
+### 7. Snow
+
+[<img src="images/snow.png" height="230" title="CSS eye EMoji">](examples/snow.html)
+
+**[⬆ back to top](#examples)**
 
 ---
 
