@@ -59,6 +59,13 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
+
+### 8. Penguin
+
+[<img src="images/penguin.png" height="230" title="CSS eye EMoji">](examples/penguin.html)
+
+**[⬆ back to top](#examples)**
+
 ---
 
 # Contribution Guide
