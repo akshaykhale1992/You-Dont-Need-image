@@ -66,6 +66,12 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
+
+### 9. Cat
+
+[<img src="images/cat.png" height="230" title="CSS Cat">](examples/cat.html)
+
+**[⬆ back to top](#examples)**
 ---
 
 # Contribution Guide
