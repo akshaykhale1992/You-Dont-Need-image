@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      #infinity {
+      position: relative;
+      width: 212px;
+      height: 100px;
+      box-sizing: content-box;
+    }
+
+    #infinity:before,
+    #infinity:after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      border: 20px solid black;
+      border-radius: 50px 50px 0 50px;
+      transform: rotate(-45deg);
+    }
+
+    #infinity:after {
+      left: auto;
+      right: 20px;
+      border-radius: 50px 50px 50px 0;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="infinity"></div>
+  </div>
+</body>
+
+</html>

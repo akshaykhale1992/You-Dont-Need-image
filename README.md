@@ -38,7 +38,6 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 [<img src="images/rainbow.png" height="230" title="CSS Rainbow">](examples/rainbow.html)
 
-
 **[⬆ back to top](#examples)**
 
 ### 5. CSS Panda
@@ -59,10 +58,15 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
-
 ### 8. Penguin
 
 [<img src="images/penguin.png" height="230" title="CSS eye EMoji">](examples/penguin.html)
+
+**[⬆ back to top](#examples)**
+
+### 9. Infinity
+
+[<img src="images/infinity.png" height="230" title="CSS infinity EMoji">](examples/infinity.html)
 
 **[⬆ back to top](#examples)**
 
@@ -76,10 +80,10 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 4. Add the link to your HTML (or you can add the codepen link) to the [examples](#examples) in the readme.md file.
 5. Raise the PR.
 
-
 ---
 
 # Contributors
+
 <p><a href="https://github.com/akshaykhale1992/You-Dont-Need-image/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=akshaykhale1992/You-Dont-Need-image" />
 </a></p>
