@@ -64,7 +64,13 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
-### 9. Infinity
+### 9. Loading Bar(Animation)
+
+[<img src="images/loading_bar.png" height="230" title="CSS Animation bar">](examples/Loading_bar/loading.html)
+
+**[⬆ back to top](#examples)**
+
+### 10. Infinity
 
 [<img src="images/infinity.png" height="230" title="CSS infinity EMoji">](examples/infinity.html)
 
