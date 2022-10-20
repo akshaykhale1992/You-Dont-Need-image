@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scenary</title>
+
+    <style>
+        #divLandscape {
+            display: block;
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            margin-top: 300px;
+            margin-left: 50px;
+            z-index: 20;
+        }
+
+        #divHillMain {
+            display: block;
+            width: 300px;
+            height: 100px;
+            background-color: brown;
+            z-index: 10;
+        }
+
+        .hill {
+            position: fixed;
+            display: block;
+            background-color: brown;
+            border: 1px solid black;
+            transform: rotate(45deg);
+            width: 60px;
+            height: 60px;
+        }
+
+        .hill1 {
+            margin-left: 15px;
+            margin-top: -15px;
+            z-index: -10;
+        }
+
+        .hill2 {
+            margin-left: 150px;
+            margin-top: -25px;
+            z-index: -10;
+        }
+
+        .hill3 {
+            width: 90px;
+            height: 90px;
+            margin-left: 80px;
+            margin-top: -45px;
+            z-index: -11;
+        }
+
+        .hill4 {
+            width: 90px;
+            height: 90px;
+            margin-left: 180px;
+            margin-top: -40px;
+            z-index: -12;
+        }
+
+        .grass {
+            width: 300px;
+            height: 45px;
+            background-color: green;
+            position: fixed;
+            display: block;
+            margin-top: 55px;
+        }
+
+        .tree1 {
+            position: fixed;
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+
+        .tree2 {
+            position: fixed;
+            margin-left: 105px;
+            margin-top: 12px;
+        }
+
+        .tree3 {
+            position: fixed;
+            margin-left: 175px;
+            margin-top: 20px;
+        }
+
+        .tree4 {
+            position: fixed;
+            margin-left: 245px;
+            margin-top: 8px;
+        }
+
+        .tree-trunk {
+            position: fixed;
+            display: block;
+            width: 5px;
+            height: 30px;
+            background-color: brown;
+            border: 1px solid black;
+            margin-top: 24px;
+            margin-left: 13px;
+            z-index: 11;
+        }
+
+        .tree-leaves {
+            position: fixed;
+            display: block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: green;
+            z-index: 12;
+        }
+
+        .tree-leaf-circle {
+            position: fixed;
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        .tree-leaf-circle1 {
+            margin-top: 0px;
+            margin-left: -5px;
+        }
+
+        .tree-leaf-circle2 {
+            margin-top: -5px;
+            margin-left: 5px;
+        }
+
+        .tree-leaf-circle3 {
+            margin-top: -5px;
+            margin-left: 16px;
+        }
+
+        .tree-leaf-circle4 {
+            margin-top: 5px;
+            margin-left: 23px;
+        }
+
+        .tree-leaf-circle5 {
+            margin-top: 18px;
+            margin-left: 20px;
+        }
+
+        .tree-leaf-circle6 {
+            margin-top: 18px;
+            margin-left: -2px;
+        }
+
+        .tree-leaf-circle7 {
+            margin-top: 8px;
+            margin-left: -6px;
+        }
+
+        .cloud {
+            position: fixed;
+            display: block;
+            width: 60px;
+            height: 30px;
+            background-color: white;
+            z-index: 10;
+        }
+
+        .cloud1 {
+            margin-left: 10px;
+            margin-top: -70px;
+            animation: slide1 18.5s ease-in-out alternate infinite;
+        }
+
+        @keyframes slide1 {
+            from {
+                margin-left: 10px;
+            }
+
+            to {
+                margin-left: 160px;
+            }
+        }
+
+        .cloud2 {
+            margin-left: 180px;
+            margin-top: -95px;
+            animation: slide2 28.5s ease-in-out alternate infinite;
+        }
+
+        @keyframes slide2 {
+            from {
+                margin-left: 20px;
+            }
+
+            to {
+                margin-left: 200px;
+            }
+        }
+
+        .cloud-circle {
+            border-radius: 50%;
+            background-color: white;
+            position: fixed;
+            display: block;
+            width: 25px;
+            height: 25px;
+        }
+
+        .cloud-circle1 {
+            width: 30px;
+            height: 30px;
+            margin-left: 38px;
+            margin-top: -8px;
+        }
+
+        .cloud-circle2 {
+            margin-left: 48px;
+            margin-top: 5px;
+        }
+
+        .cloud-circle3 {
+            width: 30px;
+            height: 30px;
+            margin-left: 18px;
+            margin-top: -18px;
+        }
+
+        .cloud-circle4 {
+            width: 30px;
+            height: 30px;
+            margin-left: -13px;
+            margin-top: 0px;
+        }
+
+        .cloud-circle5 {
+            width: 30px;
+            height: 30px;
+            margin-left: 0px;
+            margin-top: -15px;
+        }
+
+        .sky {
+            position: fixed;
+            display: block;
+            width: 300px;
+            height: 220px;
+            background-color: lightskyblue;
+            margin-top: -150px;
+            z-index: -25;
+            animation-name: sky-color;
+            animation-duration: 35s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes sky-color {
+            0% {
+                background: lightyellow;
+            }
+
+            15% {
+                background: lightskyblue;
+            }
+
+            45% {
+                background: lightskyblue;
+            }
+
+            50% {
+                background: lightyellow;
+            }
+
+            65% {
+                background: black;
+            }
+
+            95% {
+                background: black;
+            }
+
+            100% {
+                background: lightyellow;
+            }
+
+        }
+
+        .spinner {
+            position: fixed;
+            display: block;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-top: -150px;
+            z-index: -20;
+            animation-name: spinner-rotation;
+            animation-duration: 35s;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes spinner-rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .sun {
+            position: fixed;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            margin-left: 268px;
+            margin-top: 120px;
+            z-index: -25;
+        }
+
+        .moon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            box-shadow: inset 0px 10px white, inset 0px 10px 1px 1px white;
+            /* box-shadow: inset 0px 10px black, inset 0px 10px 1px 1px black; */
+            /* transform: rotate(120deg); */
+            margin-left: 0px;
+            margin-top: 120px;
+            z-index: -25;
+            animation-name: moon-rotation;
+            animation-duration: 35s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moon-rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .frame {
+            position: fixed;
+            background-color: gray;
+            z-index: 100;
+        }
+
+        .frameLeft {
+            width: 50px;
+            height: 250px;
+            margin-left: -50px;
+            margin-top: -250px;
+        }
+
+        .frameRight {
+            width: 50px;
+            height: 250px;
+            margin-left: 300px;
+            margin-top: -250px;
+        }
+
+        .frameTop {
+            height: 50px;
+            width: 400px;
+            margin-left: -50px;
+            margin-top: -300px;
+        }
+
+        .frameBottom {
+            height: 50px;
+            width: 400px;
+            margin-left: -50px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="divLandscape">
+        <div class="hill hill1"></div>
+        <div class="hill hill2"></div>
+        <div class="hill hill3"></div>
+        <div class="hill hill4"></div>
+
+        <div class="grass"></div>
+
+        <div class="tree1">
+            <div class="tree-leaves">
+                <div class="tree-leaf-circle tree-leaf-circle1"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle2"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle3"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle4"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle5"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle6"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle7"></div>
+            </div>
+            <div class="tree-trunk"></div>
+        </div>
+
+        <div class="tree2">
+            <div class="tree-leaves">
+                <div class="tree-leaf-circle tree-leaf-circle1"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle2"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle3"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle4"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle5"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle6"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle7"></div>
+            </div>
+            <div class="tree-trunk"></div>
+        </div>
+
+        <div class="tree3">
+            <div class="tree-leaves">
+                <div class="tree-leaf-circle tree-leaf-circle1"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle2"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle3"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle4"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle5"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle6"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle7"></div>
+            </div>
+            <div class="tree-trunk"></div>
+        </div>
+
+        <div class="tree4">
+            <div class="tree-leaves">
+                <div class="tree-leaf-circle tree-leaf-circle1"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle2"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle3"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle4"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle5"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle6"></div>
+                <div class=" tree-leaf-circle tree-leaf-circle7"></div>
+            </div>
+            <div class="tree-trunk"></div>
+        </div>
+
+        <div class="cloud cloud1">
+            <div class="cloud-circle cloud-circle1"></div>
+            <div class="cloud-circle cloud-circle2"></div>
+            <div class="cloud-circle cloud-circle3"></div>
+            <div class="cloud-circle cloud-circle4"></div>
+            <div class="cloud-circle cloud-circle5"></div>
+        </div>
+
+        <div class="cloud cloud2">
+            <div class="cloud-circle cloud-circle1"></div>
+            <div class="cloud-circle cloud-circle2"></div>
+            <div class="cloud-circle cloud-circle3"></div>
+            <div class="cloud-circle cloud-circle4"></div>
+            <div class="cloud-circle cloud-circle5"></div>
+        </div>
+
+        <div class="sky"></div>
+
+        <div class="spinner">
+            <div class="sun"></div>
+            <div class="moon"></div>
+        </div>
+
+        <div id="divHillMain">
+
+        </div>
+
+        <div>
+            <div class="frame frameLeft"></div>
+            <div class="frame frameTop"></div>
+            <div class="frame frameRight"></div>
+            <div class="frame frameBottom"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -82,6 +82,12 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
+### 12. Scenary
+
+[<img src="images/scenary.png" height="230" title="CSS Cat">](examples/scenary.html)
+
+**[⬆ back to top](#examples)**
+
 ---
 
 # Contribution Guide
