@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container {
+      margin: 0 auto;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    #curved {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-top: 60px solid transparent;
+      border-right: 60px solid black;
+      transform: rotate(10deg);
+      margin-left: 97px;
+    }
+
+    #curved:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 40px solid black;
+      border-radius: 130px 0 0 0;
+      top: -100px;
+      left: -87px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="curved"></div>
+  </div>
+</body>
+
+</html>

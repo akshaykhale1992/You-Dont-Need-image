@@ -82,6 +82,12 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
+### 12. Curved Arrow
+
+[<img src="images/curvedarrow.png" height="230" title="CSS curved arrow EMoji">](examples/curvedarrow.html)
+
+**[⬆ back to top](#examples)**
+
 ---
 
 # Contribution Guide
