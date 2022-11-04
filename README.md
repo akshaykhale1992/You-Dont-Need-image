@@ -88,6 +88,12 @@ Inspired by [You don't need JavaScript](https://github.com/you-dont-need/You-Don
 
 **[⬆ back to top](#examples)**
 
+### 13. Instagram Logo
+
+[<img src="images/iglogo.png" height="230" title="CSS curved arrow EMoji">](examples/iglogo.html)
+
+**[⬆ back to top](#examples)**
+
 ---
 
 # Contribution Guide
